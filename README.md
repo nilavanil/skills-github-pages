@@ -1,4 +1,76 @@
-<header>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>neilasecrets - پیام به پرنسس</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>پیام به پرنسس</h2>
+    <form action="https://formspree.io/f/xjkwogja" method="POST">
+      <label for="code">کد شما:</label>
+      <input type="text" name="code" id="code" required />
+
+      <label for="message">پیام شما:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">ارسال پیام</button>
+    </form>
+  </div>
+</body>
+</html><header>
 
 <!--
   <<< Author notes: Course header >>>
